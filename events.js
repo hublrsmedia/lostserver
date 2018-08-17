@@ -14,6 +14,6 @@ mp.events.add('playerDeath', (player) => {
     player.spawn(new mp.Vector3(930.029541015625, -157.7088165283203, 74.64573669433594));
 });
 mp.events.add("playerChat", (player, text) => {
-    text = "<b>" + player.name + "</b> sagt : " + text;
+    text = player.name + "sagt : " + text;
     player.outputChatBox(text)
 });
